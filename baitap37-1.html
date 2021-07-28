@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<style>
+		*{margin: 0px; padding: 0px; box-sizing: border-box;}
+	</style>
+	<title>bai tap 37 - bootstrap GRID</title>
+</head>
+<body>
+	<header class="container-fruid bg-transparent" style="height:200px;line-height:100px;">
+		<h1 class="text-center" style="line-height:100px;">My First Bootstrap 4 page</h1>
+		<p class="text-center">This is the first page</p>
+	</header>
+	<nav class="container-fruid badge-dark badge-dark" style="line-height:30px;">
+		Navbar
+		<div class="btn-group">
+			<button class="btn-dark mx-1 p-1">Link 1</button>
+			<button class="btn-dark mx-1 p-1">Link 2</button>
+			<div class="btn-group-vertical">
+				<button class="btn-dark dropdown-toggle mx-1 p-1" data-toggle="dropdown">Link 3</button>
+				<div class="dropdown-menu">
+		          <button class="btn-primary col-12 my-1 p-1"><a class="dropdown-item" href="#">Link 3.1</a></button>
+		          <button class="btn-primary col-12 my-1 p-1"><a class="dropdown-item" href="#">Link 3.2</a></button>
+		          <div class="dropdown-divider"></div>
+		          <button class="btn-primary col-12 my-1 p-1"><a class="dropdown-item" href="#">Something else here</a></button>
+		        </div>
+			</div>
+		</div>
+	</nav>
+	<div class="container d-block">
+		<div class="row">
+			<div class="col-md-4 d-block" style="min-height:200px;">
+				<div class="row p-2">
+					<aside class="col-12 my-2" style="min-height:100px;">
+						<h2 class="my-1">About Me</h2>
+						<p class="my-1">Photo of me:</p>
+						<div class="alert-secondary col-12 my-1" style="height:100px;">Fake image</div>
+						<p>Dome text about me in Culpa qui officia deserunt molis anim...</p>
+					</aside>
+					<aside class="col-12 my-2 d-block" style="height:200px">
+						<h2>Some links</h2>
+						<p>Lorem ipsum,,,</p>
+						<div class="btn-group-vertical col-12 d-block">
+							<button class="btn btn-primary my-1">Link 1</button>
+							<button class="btn btn-primary my-1">Link 2</button>
+							<button class="btn btn-primary my-1">Link 3</button>
+						</div>					
+					</aside>
+				</div>
+			</div>
+			<div class="col-md-8 d-block" style="background:yellow;min-height:400px;">
+				<div class="row p-2">
+					<article class="col-12 bg-secondary my-2" style="height:200px;">TITLE HEADING 1</article>
+					<article class="col-12 bg-secondary my-2" style="height:200px;">TITLE HEADING 2</article>
+				</div>
+			</div>
+		</div>
+	</div>
+	<footer class="container-fruid badge-dark text-center fixed-bottom" style="line-height:100px;">Footer</footer>
+</body>
+</html>
